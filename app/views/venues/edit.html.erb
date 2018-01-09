@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="text-center">
+		<h1>Edit Venue</h1>
+	</div>
+
+	<div class="col-sm-4 col-sm-offset-4">
+
+		<%= bootstrap_form_for(@venues, layout: :horizontal) do |t| %>
+			<p><%= t.text_field :name %></p>
+			<p><%= t.text_field :city %></p>
+			<p><%= t.text_field :state %></p>
+			<p><%= t.text_field :family_friendly %></p>
+				
+		<div class="text-center">
+			<%= submit_tag "Confirm" %>
+		</div>
+		
+		<% end %>
+
+	</div>
+</div>

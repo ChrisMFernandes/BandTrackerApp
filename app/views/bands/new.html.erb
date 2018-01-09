@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="text-center">
+		<h1>Add New Band</h1>
+	</div>
+		<div class="text-center">
+			<%= bootstrap_form_for(@bands, layout: :inline) do |f|%>
+				<label><%= f.text_field :name %></label>
+				<label><%= f.text_field :genre %></label>
+				<label><%= f.select :explicit_lyrics, [['Yes', true], ['No', false]] %></label>
+		<div class="text-center">
+			<%= submit_tag "Add" %>
+		</div>
+		<% end %>
+	</div>
+</div>
+

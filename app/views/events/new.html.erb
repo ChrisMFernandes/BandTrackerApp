@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="text-center">
+		<h1>Add New Event</h1>
+	</div>
+
+	<div class="text-center">
+			<%= bootstrap_form_for(@events, layout: :inline) do |f| %>
+				<label><%= f.text_field :date %></label>
+				<label><%= f.select :alcohol_served, [['Yes', true], ['No', false]] %></label>
+			<%= submit_tag "Add" %>
+		<% end %>
+	</div>
+</div>
+

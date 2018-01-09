@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="text-center">
+		<h1>Edit Band</h1>
+	</div>
+
+		<%= bootstrap_form_for(@bands, layout: :horizontal) do |t| %>
+			<p><%= t.text_field :name %></p>
+			<p><%= t.text_field :genre %></p>
+			<p><%= t.text_field :explicit_lyrics %></p>
+		<div class="text-center">
+				<%= submit_tag "Confirm" %>
+		</div>
+		<% end %>
+</div>

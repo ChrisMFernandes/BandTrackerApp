@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="text-center">
+    <h1> Venues </h1>
+  </div>
+</div>
+	<table class="table table-striped">
+    	<thead>
+      	<tr>
+        	<th>Name</th>
+        	<th>City</th>
+        	<th>State</th>
+        	<th>Family Friendly</th>
+      	</tr>
+    	</thead>
+    <tbody>
+    		<% @venues.each do |t| %>
+      	<tr>
+        	<td><%= t.name %></td>
+        	<td><%= t.city %></td>
+       		<td><%= t.state %></td>
+        	<td><%= t.family_friendly %></td>
+        	<td><%= link_to "Edit Venue", edit_venue_path(t) %></td>
+          <td><%= link_to "Delete Venue", venue_path(t), method: :delete, data: {confirm: "Are you sure?"} %><td>
+      	</tr>
+      	 <% end %>
+    </tbody>
+  </table>
+
+  <div class="text-center">
+	   <%= link_to "Create New Venue", new_venue_path %>
+  </div>

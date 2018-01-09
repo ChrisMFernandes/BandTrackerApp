@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bandapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">Band Tracker</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Venues", venues_path %></li>
+      <li><%= link_to "Bands", bands_path %></li>
+      <li><%= link_to "Events", events_path %></li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/images/edm.jpg">
+    </div>
+
+
+    
+    <div class="container">
+      <div class="page-header">
+        <div class="text-center">
+          <h1>Welcome to Band Tracker</h1>   
+        </div>   
+    </div>
+  </div>
+
+
+    <%= yield %>
+
+
+  <footer class="text-center">
+  <br><br>
+  <p>Band Tracker</p> 
+</footer>
+  </body>
+</html>

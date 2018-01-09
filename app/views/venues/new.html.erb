@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="text-center">
+		<h1>Add New Venue</h1>
+	</div>
+		<%= bootstrap_form_for(@venues, layout: :inline) do |f| %>
+			<label><%= f.text_field :name %></label>
+			<label><%= f.text_field :city %></label>
+			<label><%= f.text_field :state %></label>
+			<label><%= f.select :family_friendly, [['Yes', true], ['No', false]] %></label>
+		<%= submit_tag "Add" %>
+		<% end %>
+</div>
