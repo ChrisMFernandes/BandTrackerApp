@@ -1,24 +1,11 @@
-# README
+*BandTrackerApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users should be able to:
 
-Things you may want to cover:
+Perform basic CRUD actions for:
 
-* Ruby version
+* Bands.
 
-* System dependencies
+* Venues.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Events.
